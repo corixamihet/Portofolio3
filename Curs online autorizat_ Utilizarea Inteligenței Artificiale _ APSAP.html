@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Curs online autorizat: Utilizarea Inteligenței Artificiale | APSAP</title>
+<meta name="description" content="În 5 zile înveți să folosești ChatGPT, Claude, Gemini, Copilot și Perplexity ca un profesionist. Curs online cu certificat de absolvire acreditat.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF3E3;--surface:#FFFBF5;--ink:#3B1C12;--muted:#7A5545;--line:#EBCFB4;--accent:#FFA67A;--accent-ink:#3B1C12;--hi:#FFB020;--hi-ink:#3B1C12;--deep:#3B1C12;--deep-ink:#FFF3E3;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#22130E;--surface:#2E1A12;--ink:#FCEBDA;--muted:#CBA48F;--line:#4A2F22;--accent:#FFA67A;--accent-ink:#22130E;--deep:#FFB020;--deep-ink:#22130E}}
+:root[data-theme="dark"]{--bg:#22130E;--surface:#2E1A12;--ink:#FCEBDA;--muted:#CBA48F;--line:#4A2F22;--accent:#FFA67A;--accent-ink:#22130E;--deep:#FFB020;--deep-ink:#22130E}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 Figtree,system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque",Figtree,system-ui,sans-serif;line-height:1.08;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+header{padding:20px 0}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.brand{font:700 18px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:14px 24px;border-radius:10px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
+.btn:hover{filter:brightness(1.08)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--hi);outline-offset:3px}
+.hero{padding:40px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(38px,6vw,66px);font-weight:700}
+.hero p.lead{font-size:19px;color:var(--muted);max-width:34em;margin:20px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.chat{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:20px;font-size:15px}
+.chat .p{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:14px 16px;min-height:6.2em}
+.chat .p::after{content:"";display:inline-block;width:2px;height:1.1em;background:var(--accent);margin-left:2px;vertical-align:-3px;animation:blink 1s steps(1) infinite}
+.chat .r{margin-top:14px;padding:14px 16px;border-left:4px solid var(--hi);opacity:0;transition:opacity .6s}
+.chat .r.on{opacity:1}
+.chat small{display:block;color:var(--muted);margin-bottom:8px}
+.chat ul{margin:6px 0 0;padding-left:18px}
+@keyframes blink{50%{opacity:0}}
+.tools{display:flex;flex-wrap:wrap;gap:10px;padding:0 0 56px}
+.tools span{border:1px solid var(--line);background:var(--surface);padding:8px 16px;border-radius:99px;font-size:15px;font-weight:500}
+.facts{background:var(--deep);color:var(--deep-ink)}
+.facts .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.facts div{padding:26px 18px;border-left:1px solid rgba(255,255,255,.18)}
+.facts div:first-child{border-left:0;padding-left:0}
+.facts b{display:block;font:700 22px "Bricolage Grotesque",sans-serif}
+.facts span{opacity:.8;font-size:15px}
+section{padding:72px 0}
+h2{font-size:clamp(28px,4vw,42px);max-width:18em}
+.sub{color:var(--muted);max-width:38em;margin:14px 0 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.list{list-style:none;padding:0;margin:28px 0 0}
+.list li{padding:15px 0;border-top:1px solid var(--line)}
+.list li:last-child{border-bottom:1px solid var(--line)}
+.list b{display:block}
+.list span{color:var(--muted);font-size:16px}
+.comp{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;margin-top:28px}
+.comp .list{margin:0}
+.steps{counter-reset:s;list-style:none;padding:0;margin:28px 0 0}
+.steps li{counter-increment:s;padding:0 0 22px 54px;position:relative}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:36px;height:36px;border-radius:50%;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;font-weight:700}
+.steps b{display:block}
+.steps span{color:var(--muted);font-size:16px}
+.note{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--hi);border-radius:10px;padding:16px 18px;margin-top:20px;font-size:16px}
+.more{display:inline-block;margin-top:20px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:3px;text-underline-offset:4px}
+details{border-top:1px solid var(--line);padding:18px 0}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin:10px 0 0;max-width:40em}
+.final{background:var(--deep);color:var(--deep-ink);border-radius:22px;padding:48px;margin-bottom:72px}
+.final h2{max-width:15em}
+.final p{opacity:.85;margin:12px 0 26px}
+.final .btn{background:var(--hi);color:var(--hi-ink);border-color:var(--hi)}
+footer{padding:0 0 40px;color:var(--muted);font-size:14px}
+.tbc{background:var(--hi);color:var(--hi-ink);padding:0 5px;border-radius:4px;font-weight:600}
+@media (max-width:820px){.hero .wrap,.two,.comp{grid-template-columns:1fr}.hero .wrap,.two{gap:32px}.facts .wrap{grid-template-columns:1fr 1fr}.facts div:nth-child(3){border-left:0;padding-left:0}.final{padding:32px 24px}section{padding:52px 0}.comp .list+.list{margin-top:0;border-top:0}}
+@media (prefers-reduced-motion:reduce){.chat .p::after{animation:none}.chat .r{transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="brand" href="https://elearning.apsap.ro">APSAP E-Learning</a><a class="btn ghost" href="#inscriere">Înscrie-te</a></div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <div>
+    <h1>În 5 zile, înveți să lucrezi cu inteligența artificială ca un profesionist.</h1>
+    <p class="lead">Curs online autorizat, cu certificat de absolvire acreditat. De la texte impecabile și idei creative, la automatizări care îți salvează ore din zi.</p>
+    <div class="cta"><a class="btn" href="https://elearning.apsap.ro/curs/ai-utilizarea-inteligentei-artificiale">Înscrie-te la curs</a><a class="btn ghost" href="#program">Vezi ce înveți</a></div>
+  </div>
+  <div class="chat" aria-label="Exemplu de cerere către un asistent AI">
+    <small>Exemplu de cerere (prompt)</small>
+    <div class="p" id="typed"></div>
+    <div class="r" id="resp"><small>Rezultat</small>Draft de e-mail gata de trimis, cu:<ul><li>subiect clar și ton politicos</li><li>cele 3 decizii de luat până vineri</li><li>termenele din raport, verificate de tine</li></ul></div>
+  </div>
+</div></div>
+
+<div class="wrap tools" aria-label="Platforme AI din curs"><span>ChatGPT</span><span>Claude</span><span>Gemini</span><span>Microsoft Copilot</span><span>Perplexity</span><span>Midjourney</span><span>Canva AI</span></div>
+
+<div class="facts"><div class="wrap">
+  <div><b>5 zile</b><span>de curs, 100% online</span></div>
+  <div><b>Certificat acreditat</b><span>de absolvire, după examen</span></div>
+  <div><b>Sesiuni live</b><span>interactive, cu traineri experți</span></div>
+  <div><b>2 săptămâni</b><span>pentru a susține examenul final</span></div>
+</div></div>
+
+<section id="program"><div class="wrap two">
+  <div>
+    <h2>Ce înveți în curs</h2>
+    <p class="sub">Înveți să comunici cu AI-ul în limbajul lui și să obții răspunsuri exacte, rapide și utile, în marketing, copywriting, educație, afaceri, comunicare și analiză financiară.</p>
+    <a class="more" href="https://elearning.apsap.ro/curs/ai-utilizarea-inteligentei-artificiale">Vezi tematica completă pe platformă</a>
+  </div>
+  <div>
+    <h3 style="font-size:22px">Modulul 1: Fundamentele inteligenței artificiale și aplicațiile sale</h3>
+    <ul class="list">
+      <li><b>Ce este AI și cum funcționează</b><span>Modelele de limbaj mari (LLM), pe înțelesul tuturor.</span></li>
+      <li><b>Tipuri de AI</b><span>Conversațională, generativă, predictivă, analitică.</span></li>
+      <li><b>Platformele moderne</b><span>Ce pot face ChatGPT, Microsoft Copilot, Claude, Gemini și Perplexity.</span></li>
+      <li><b>Exemple de utilizare</b><span>Marketing, copywriting, educație, afaceri, comunicare, analiză financiară.</span></li>
+      <li><b>Atelier aplicat</b><span>Formularea corectă a prompturilor, pentru răspunsuri precise și utile.</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>Ce poți face după curs</h2>
+  <div class="comp">
+    <ul class="list">
+      <li><b>Scriere și gândire algoritmică</b><span>Traduci ideile în comenzi pe care AI-ul le înțelege și le execută impecabil.</span></li>
+      <li><b>Stăpânirea platformelor majore</b><span>Lucrezi cu ChatGPT, Gemini, Copilot, Claude, Midjourney, Canva AI și înțelegi diferențele dintre ele.</span></li>
+      <li><b>Conținut digital complet</b><span>De la text și imagine până la video și prezentări interactive, fără efort tehnic.</span></li>
+      <li><b>Automatizarea proceselor de muncă</b><span>Proiectezi fluxuri care reduc timpul de execuție și cresc productivitatea.</span></li>
+      <li><b>Analiză și sinteză</b><span>AI devine instrumentul tău de cercetare: structurează, compară și sintetizează date complexe.</span></li>
+    </ul>
+    <ul class="list">
+      <li><b>Lucrul în echipă om–AI</b><span>Tratezi inteligența artificială ca pe un partener, nu ca pe o unealtă.</span></li>
+      <li><b>Etică și responsabilitate digitală</b><span>Folosești AI în siguranță, respectând confidențialitatea datelor și regulamentele în vigoare.</span></li>
+      <li><b>Dezvoltare profesională accelerată</b><span>Dobândești competențe căutate pe piața muncii, indiferent de domeniu.</span></li>
+      <li><b>Capacitatea de inovare</b><span>Gândești soluții noi, combinând cunoștințele tale cu puterea algoritmilor.</span></li>
+      <li><b>Independență tehnologică</b><span>Știi exact ce poți cere și cum obții rezultatul dorit, din prima.</span></li>
+    </ul>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap two">
+  <div>
+    <h2>Cum funcționează</h2>
+    <ol class="steps">
+      <li><b>Te înscrii și încarci documentele</b><span>Dosarul se completează direct în platformă.</span></li>
+      <li><b>Primești acces după aprobare și plată</b><span>Accesul se activează când dosarul este complet și taxa este achitată integral.</span></li>
+      <li><b>Înveți în ritmul tău</b><span>Materiale video, quiz-uri și sesiuni live interactive, până la data examenului.</span></li>
+      <li><b>Susții examenul online</b><span>Test grilă pe platforma APSAP și o probă practică: pregătirea și prezentarea unui proiect.</span></li>
+    </ol>
+  </div>
+  <div>
+    <h2>Pentru cine este</h2>
+    <p class="sub">Pentru persoane și profesioniști interesați să aplice tehnologii AI și să-și dezvolte competențele digitale.</p>
+    <div class="note"><b>Condiție pentru certificat:</b> învățământ general obligatoriu, dovedit prin diploma de absolvire a minimum 10 clase.</div>
+    <div class="note"><b>Materiale incluse:</b> suport de curs, studii de caz și modele de lucru, actualizate de lectori.</div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <h2>Întrebări frecvente</h2>
+  <div style="margin-top:28px">
+    <details><summary>Când primesc acces la platformă?</summary><p>După ce dosarul de înscriere este complet, documentele sunt aprobate și taxa cursului este achitată integral.</p></details>
+    <details><summary>Cum se desfășoară examinarea?</summary><p>Online, printr-un test grilă derulat pe platforma de e-learning APSAP și o probă practică, formată din pregătirea și prezentarea unui proiect.</p></details>
+    <details><summary>Cât timp am la dispoziție pentru examen?</summary><p>Ai 2 săptămâni pentru a susține examenul. Dacă nu poți susține examenul în perioada setată, se poate organiza o altă sesiune într-o perioadă de 2 ani.</p></details>
+    <details><summary>Ce studii îmi trebuie?</summary><p>Diploma de absolvire a minimum 10 clase, pentru a primi Certificatul de Absolvire acreditat.</p></details>
+    <details><summary>Cât costă cursul?</summary><p><span class="tbc">[preț]</span></p></details>
+    <details><summary>Pot discuta cu cineva înainte să mă înscriu?</summary><p>Da. Scrie la secretariat@apsap.ro sau sună la 0788 124 567.</p></details>
+  </div>
+</div></section>
+
+<div class="wrap" id="inscriere"><div class="final">
+  <h2>Învață să lucrezi cu AI, nu în locul lui</h2>
+  <p>Înscrierea se face online, în platforma APSAP E-Learning.</p>
+  <a class="btn" href="https://elearning.apsap.ro/curs/ai-utilizarea-inteligentei-artificiale">Înscrie-te la curs</a>
+</div></div>
+</main>
+
+<footer><div class="wrap">Centrul de Formare APSAP · Str. Turturelelor nr. 62, Decebal Tower, etaj 6, București · secretariat@apsap.ro · 0788 124 567</div></footer>
+
+<script>
+(function(){
+  var t=document.getElementById('typed'),r=document.getElementById('resp');
+  var txt='Scrie un e-mail către echipă care rezumă raportul atașat și cere trei decizii până vineri. Ton politicos, maximum 120 de cuvinte.';
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches){t.textContent=txt;r.classList.add('on');return}
+  var i=0;(function n(){t.textContent=txt.slice(0,i++);if(i<=txt.length){setTimeout(n,28)}else{setTimeout(function(){r.classList.add('on')},400)}})();
+})();
+</script>
+</body>
+</html>
